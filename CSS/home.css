@@ -1,0 +1,182 @@
+body{
+    border-style: none;
+    background-color: #ffe6b3;
+    align-content: center;
+    display: block;
+}
+
+.stuctural_table{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+header {
+    align-content: center;
+    font-family: Cursive;
+    font-size: 8em;
+    color: #804200;
+}
+
+header a:link, header a:visited{
+    color: #804200;
+    text-decoration: none;
+}
+
+tr.middleup{
+    background-color:#ffe6cc;
+    color: #332600;
+    font-size: 3em;
+    border-top: 50px solid #ffe6cc;
+}
+
+tr.middledown{
+    color: #be7200;
+    text-shadow: 0px 0px 1px #000000;
+    font-size: 2em;
+    background-color:#ffe6cc;
+}
+
+tr.middledown td{
+    width:100%;
+}
+
+td.imagegallery{
+    width: 100%;
+}
+
+
+
+.imgsanime{
+    
+    align-content: center;
+    max-width: 1000px;
+    height: 700px;
+    position:relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.imgsanime div{
+    align-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    display:block;
+    animation-name: imggal;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+.imgsanime div img{
+    position: relative;
+    align-content: center;
+    display: flex;
+    max-width: 1000px;
+    height: 700px;
+}
+
+@keyframes imggal {
+    4%{opacity: 1;}
+    12%{opacity: 1;}
+    16%{opacity: 1;}
+    20%{opacity: 0;}
+}
+
+.imgsanime div:nth-child(1){
+    animation-delay: 0s; }
+
+.imgsanime div:nth-child(2){
+    animation-delay: 5s; 
+}
+.imgsanime div:nth-child(3){
+    animation-delay: 10s; 
+}
+.imgsanime div:nth-child(4){
+    animation-delay: 15s; 
+}
+.imgsanime div:nth-child(5){
+    animation-delay: 20s; 
+}
+.imgsanime div:nth-child(6){
+    animation-delay: 25s; 
+}
+
+.textbox{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #facd6b;
+    text-shadow: 1px 1px 3px #000000;
+
+}
+
+nav{
+    color: #ffad33;
+    background-color: #804200;
+}
+
+ul.navbar{
+    padding: 1.5em;
+    list-style-type: none;
+    
+    color: white;
+    border: none; 
+}
+
+ul.navbar li{
+    align-content: center;
+    display:inline-block;
+    font-size: 1.7em;
+    margin: 0.5em;
+}
+
+nav a:link, nav a:visited {
+    color: #ffd699;
+    text-decoration: none;
+}
+
+a:hover.title{
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color:#ffe6b3;
+    font-size: 0.8em;
+    position:relative;
+    border-top: 3em solid #804200;
+    color: #808080;
+}
+
+footer a:visited, footer a:link{
+    color: #808080;
+    text-decoration: none;
+}
+
+ ul.footer li{
+    display: inline-block;
+    font-size: 2em;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 1100px){
+    header{
+        font-size: 4.2em;
+    }
+
+    .navbar{
+        font-size: 0.8em;
+    }
+
+    .imgsanime div, .imgsanime div img, .imgsanime{
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+ 

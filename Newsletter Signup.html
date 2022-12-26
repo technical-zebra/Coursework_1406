@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <title>Newsletter Signup Form page</title>
+      <link href="CSS/webform.css" rel="stylesheet" type="text/css">
+      <script src="JavaScript/webformjavascript.js"></script>
+   </head>
+   <body>
+
+      <div class="logo"><b><a href="home.html">Petite Treats</a></b></div>
+
+      <div class="SignUpBlock">
+      <form name="SignupForm" action="PHP/welcome.php" method="post" onsubmit = "return validate()">
+      
+      <div class="formHeader">Newsletter Signup form</div>
+      *denotes mandotory</p>
+
+      <label for="fullname">Full name*:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="FirstName LastName" value="">
+      </p> <label for="email">Email address:*</label>
+      <input type="text" id="email" name="email" placeholder="abc@gmail.com" value=""> 
+      </p>
+
+      <label for="productInterests">Product Interests(Single or Multiple):*</label></br>
+      <select name="productInterests[]" id="productInterests" multiple>
+      <option value="" disabled selected>Choose option</option>
+      <option value="Donuts">Donuts</option>
+      <option value="Vanilla Slice">Vanilla Slice</option>
+      <option value="Randy Tart">Randy Tart</option>
+      <option value="Custard Tart">Custard Tart</option>
+      <option value="Raspberry Cheesecake">Raspberry Cheesecake</option>
+      <option value="Apple Cake Slice">Apple Cake Slice</option>
+      </select>
+      </p>
+
+      <label for="birthdaydate">Birthday*:</label></br>
+      <input type="date" id="birthdaydate" name="birthdaydate" value="" min="" max="">
+      </p>
+
+      Terms and conditions*:</br>
+      <input type="radio" id="termAndConditions" name="termAndConditions" value="agree">
+      <label for="agree">I agree</label>
+      <input type="radio" id="termAndConditions" name="termAndConditions" value="disagree">
+      <label for="disagree">I disagree</label><br>
+      </p>
+
+      <input type="submit" value="Complete Signup" >
+
+      <p id="message" class="message"></p>
+
+      <p id="check" class="message"></p>
+
+      </form>
+
+      </div>
+
+   </body>
+</html>

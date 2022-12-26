@@ -1,0 +1,61 @@
+body {
+    background-color: #ffe6b3;
+    background-image: linear-gradient(#ffcc66,#cc6600 );
+    font-family: 'Times New Roman', Times, serif;
+}
+.SignUpBlock {
+    display: block;
+    text-align: left;
+    border: 15px solid #804200;
+    color: #be7200;
+    text-shadow: 0px 0px 1px #000000;
+    font-size: 1.1em;
+    background-color:#ffe6cc;
+    width: 800px;
+    border-radius: 25px;
+    padding: 40px;
+    margin-right: 20%;
+    margin-left: auto;
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
+.formHeader{
+    font-size: 2.2em;
+    color: #be7200;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.message {
+    text-shadow: 0px 0px 1px #000000;
+    font-size: 1.1em;
+    color: rgb(182, 60, 60);
+
+}
+
+
+.logo {
+    text-align: left;
+    font-family: Cursive;
+    font-size: 6em;
+    color: #f6ab09;
+    text-shadow: 2px 2px 5px wheat;
+    float: top;
+    padding: 10px;
+}
+
+.logo a:link, a:visited{
+    color: #804200;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px){
+    .SignUpBlock {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    .logo{
+        font-size: 80px;
+    }
+}
